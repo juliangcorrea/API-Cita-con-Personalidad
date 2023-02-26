@@ -36,7 +36,7 @@ function getPersonality(quote) {
             'content-type': 'application/json',
             Accept: 'application/json',
             'X-RapidAPI-Key': 'USER_PRIVATE_API_KEY',
-            'X-RapidAPI-Host': 'personality-traits.p.rapidapi.com'
+            'X-RapidAPI-Host': 'host_name'
         },
         body: JSON.stringify(test)
     }
@@ -62,7 +62,7 @@ function getQuote() {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'USER_PRIVATE_API_KEY',
-            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+            'X-RapidAPI-Host': 'host_name'
         }
     }
     return fetch('https://quotes15.p.rapidapi.com/quotes/random/?language_code=es', options2)
