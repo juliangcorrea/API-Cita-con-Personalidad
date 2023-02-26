@@ -35,7 +35,7 @@ function getPersonality(quote) {
         headers: {
             'content-type': 'application/json',
             Accept: 'application/json',
-            'X-RapidAPI-Key': '7943fdd383msh2cee669668952d9p1af3dcjsnf3e9cc28eb73',
+            'X-RapidAPI-Key': 'PRIVATE-USER-API-KEY',
             'X-RapidAPI-Host': 'personality-traits.p.rapidapi.com'
         },
         body: JSON.stringify(test)
@@ -61,7 +61,7 @@ function getQuote() {
     const options2 = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '7943fdd383msh2cee669668952d9p1af3dcjsnf3e9cc28eb73',
+            'X-RapidAPI-Key': '[PRIVATE-USER-API-KEY]',
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     }
