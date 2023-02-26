@@ -6,7 +6,6 @@ const load = document.querySelector(".load")
 const textQuote = document.querySelector(".quote")
 let authorName = ""
 let authorQuote = ""
-let api_key = API_KEY
 
 btn.addEventListener("click", getData)
 
@@ -36,7 +35,7 @@ function getPersonality(quote) {
         headers: {
             'content-type': 'application/json',
             Accept: 'application/json',
-            'X-RapidAPI-Key': `${api_key}`,
+            'X-RapidAPI-Key': 'USER_PRIVATE_API_KEY',
             'X-RapidAPI-Host': 'personality-traits.p.rapidapi.com'
         },
         body: JSON.stringify(test)
@@ -62,7 +61,7 @@ function getQuote() {
     const options2 = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': `${api_key}`,
+            'X-RapidAPI-Key': 'USER_PRIVATE_API_KEY',
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     }
